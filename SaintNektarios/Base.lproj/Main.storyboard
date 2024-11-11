@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BL5-jU-TUo">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Βιογραφία-->
+        <scene sceneID="7JH-lL-drI">
+            <objects>
+                <viewController id="hCf-O8-B2E" customClass="BiographyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mDe-5v-gFg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="papyrus" translatesAutoresizingMaskIntoConstraints="NO" id="AFH-vU-NcZ">
+                                <rect key="frame" x="-305" y="74" width="966" height="695"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="966" id="QfH-yN-JII"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agiosnektarios" translatesAutoresizingMaskIntoConstraints="NO" id="0tL-eq-DIe">
+                                <rect key="frame" x="154" y="142" width="85" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="TZA-Wo-e7j"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Η ΖΩΗ ΤΟΥ ΑΓΙΟΥ ΝΕΚΤΑΡΙΟΥ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EpU-gg-Rqk">
+                                <rect key="frame" x="33" y="90" width="344" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemYellowColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="foa-Dy-cdI">
+                                <rect key="frame" x="0.0" y="230" width="393" height="539"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content"> Αγιος Νεκτάριος γεννήθηκε στη Σηλυβρία της Θράκης το 1846. Γονείς του ήταν ο Δήμος και η Βασιλική Κεφαλά. Ήταν το πέμπτο αγόρι της οικογένειας και όταν τον βάφτισαν του έδωσαν το όνομα Αναστάσιος. \nΣτην Σηλυβρία διδάχτηκε τα πρώτα γράμματα, αλλά επειδή η οικογένειά του ήταν φτωχή, αποφάσισε να πάει στην Κωνσταντινούπολη όπου θα συνέχιζε τις σπουδές του, ενώ ταυτόχρονα θα εργαζόταν.
+
+Πράγματι, σε ηλικία 14 ετών, πήγε στη Βασιλεύουσα όπου άρχισε να εργάζεται στο καπνεργοστάσιο ενός συγγενή του. Παρόλο που εργαζόταν, δεν τον πλήρωναν για την εργασία του κι έτσι ο Αγιος δυσκολευόταν να βρει ακόμα και να φάει. Οι δυσκολίες της ζωής, δεν τον εμπόδισαν, όμως, τα βράδια του να τα αφιερώνει στη μάθηση και να τα περνά διαβάζοντας βιβλία και εκκλησιαστικές μελέτες.
+
+Κάποια στιγμή αποφάσισε να επισκεφθεί τους Αγίους Τόπους. Κατά τη διάρκεια του ταξιδιού προς τα εκεί, ξέσπασε μεγάλη θαλασσοταραχή και κινδύνεψε το πλοίο να βυθιστεί. Ο Αγιος Νεκτάριος βύθισε στη θάλασσα το Σταυρό, που κουβαλούσε πάντα μαζί του, και η θάλασσα αμέσως ημέρεψε. Ο Σταυρός όμως χάθηκε και ο Αγιος λυπήθηκε πολύ. Όταν το πλοίο, όμως, έφτασε σώο στον προορισμό του, ο Σταυρός βρέθηκε κολλημένος στα ύφαλα του πλοίου. Αυτό ήταν το πρώτο θαύμα που έκανε ο Αγιος Νεκτάριος εν ζωή. Το μετόχι του Παναγίου Τάφου προσέλαβε τον Αγιο και έτσι έμεινε εκεί ως την ηλικία των 20 ετών.
+
+Όταν συμπλήρωσε το 20 έτος της ηλικίας του, πήγε στο χωριό Λιθί της Χίου. Εκεί δίδαξε γράμματα στα παιδιά του χωριού, επί 7 συνεχή έτη. Η επιθυμία του Αγίου ήταν να γίνει μοναχός. Κάνοντας πράξη την επιθυμία του, χρίστηκε μοναχός στη Νέα Μονή της Χίου. Στη Νέα Μονή μελέτησε εκτενώς τα συγγράμματα που βρίσκονταν στην βιβλιοθήκη της Μονής. Το 1877 χειροτονήθηκε Διάκονος στο ναό του Αγίου Μηνά και έλαβε το όνομα Νεκτάριος.
+
+Με τη βοήθεια του Ιωάννη Χωρέμη (ευκατάστατου Χιώτη) και του Πατριάρχη Αλεξανδρείας Σωφρόνιου, ο Αγιος τελείωσε τις Γυμνασιακές του σπουδές στην Αθήνα και σπούδασε στη Θεολογική Σχολή του Πανεπιστημίου Αθηνών.
+
+Αφού πήρε το πτυχίο του το 1885, πήγε στην Αλεξάνδρεια, όπου χειροτονήθηκε Πρεσβύτερος και εργάστηκε ως γραμματέας του Πατριαρχείου και ως Πατριαρχικός Επίτροπος στο Κάιρο. Το έτος 1889 χειροτονήθηκε στο Κάιρο, Μητροπολίτης Πενταπόλεως. Ο Αγιος Νεκτάριος ασκούσε τα καθήκοντά του με ζήλο και αρετή. Η προσωπικότητά του όμως και οι δραστηριότητές του, προκάλεσαν το μίσος σε ανθρώπους που βρίσκονταν στο περιβάλλον του Πατριάρχη Σωφρόνιου. Αυτοί συκοφάντησαν τον Αγιο Νεκτάριο ότι εποφθαλμιούσε το αξίωμα του Πατριάρχη και κατάφεραν να εκδιωχθεί από το Πατριαρχείο Αλεξανδρείας.
+
+Ο Αγιος ήρθε στην Αθήνα, όπου για ένα έτος δεν έβρισκε εργασία και στερούνταν συχνά και το ίδιο το φαγητό. Ζήτησε από το Υπουργείο Παιδείας να τον διορίσει Ιεροκήρυκα όπου θεωρούσε το Υπουργείο σωστό. Τελικά διορίστηκε Ιεροκήρυκας στη Χαλκίδα. Κατά τη διάρκεια της θητείας του εκεί, αποκαλύφθηκε η συκοφαντία που είχε υποστεί στο Πατριαρχείο Αλεξανδρείας.
+
+Το 1894 ο Αγιος Νεκτάριος διορίστηκε Διευθυντής της Ριζαρίου Σχολής. Η φωτογραφία που συνοδεύει το κείμενο έχει τραβηχτεί στον περίβολο της Σχολής εκείνη την εποχή. Ο Αγιος διεύθυνε τη Σχολή με υποδειγματικό τρόπο και απεριόριστη αγάπη για τους σπουδαστές της. Όσο ήταν ακόμη διευθυντής στη Σχολή, αγόρασε ένα μικρό και παλαιό μοναστήρι στην Αίγινα. Με πολλούς κόπους κατάφερε να αναστηλώσει και να μεγαλώσει το μοναστήρι αυτό.
+
+Το 1908, και αφού είχε διευθύνει την Ριζάριο για 14 συνεχή έτη, παραιτήθηκε από τη θέση του Διευθυντή για λόγους υγείας. Ο Αγιος Νεκτάριος συνέχισε τον βίο του στο μοναστήρι της Αίγινας. Ταπεινός και απλός όπως ήταν, λάμβανε στο μοναστήρι, μέρος σε κάθε ασχολία, βοηθώντας ακόμη και τους εργάτες στις εργασίες τους. Παράλληλα με τις ασχολίες του αυτές, μελετούσε βιβλία και συνέγραφε. Επιγραμματικά αναφέρουμε το έργο του «Περί του Σχίσματος», τριάντα Τριαδικούς ύμνους, εκατόν πενήντα τέσσερις ύμνους για την Θεοτόκο καθώς και πολλούς εκκλησιαστικούς λόγους.
+
+Στη μονή έζησε ο Αγιος Νεκτάριος ως το 1920 που δημιουργήθηκε ένα πρόβλημα στον προστάτη του και αρρώστησε. Υποφέροντας από φρικτούς πόνους μεταφέρθηκε στο Αρεταίειο Νοσοκομείο Αθηνών. Στις 9 Νοεμβρίου του 1920 παρέδωσε το πνεύμα του σε ηλικία 74 ετών. Κατά τη διάρκεια της ζωής του όπως και μετά το πέρας αυτής, ο Αγιος έκανε πολλά θαύματα. Είναι ο νεότερος Αγιος της Εκκλησίας μας και η μνήμη του τιμάται στις 9 Νοεμβρίου.</string>
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" metaFont="system" size="14"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NCG-ss-q9p"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AFH-vU-NcZ" firstAttribute="bottom" secondItem="foa-Dy-cdI" secondAttribute="bottom" id="0jE-No-Kju"/>
+                            <constraint firstItem="NCG-ss-q9p" firstAttribute="bottom" secondItem="foa-Dy-cdI" secondAttribute="bottom" id="2de-Gt-M5z"/>
+                            <constraint firstItem="AFH-vU-NcZ" firstAttribute="leading" secondItem="mDe-5v-gFg" secondAttribute="leading" constant="-305" id="4UT-8k-Uc7"/>
+                            <constraint firstItem="foa-Dy-cdI" firstAttribute="top" secondItem="0tL-eq-DIe" secondAttribute="bottom" constant="8" id="5gM-tb-H9Y"/>
+                            <constraint firstItem="AFH-vU-NcZ" firstAttribute="top" secondItem="NCG-ss-q9p" secondAttribute="top" constant="15" id="7JX-Pm-Prt"/>
+                            <constraint firstItem="EpU-gg-Rqk" firstAttribute="trailing" secondItem="mDe-5v-gFg" secondAttribute="trailingMargin" id="F4v-66-XH0"/>
+                            <constraint firstItem="0tL-eq-DIe" firstAttribute="leading" secondItem="NCG-ss-q9p" secondAttribute="leading" constant="154" id="G7B-Y7-q7h"/>
+                            <constraint firstItem="0tL-eq-DIe" firstAttribute="centerX" secondItem="mDe-5v-gFg" secondAttribute="centerX" id="Ju4-jf-dMJ"/>
+                            <constraint firstItem="EpU-gg-Rqk" firstAttribute="top" secondItem="NCG-ss-q9p" secondAttribute="top" constant="31" id="QQb-Cp-dfA"/>
+                            <constraint firstItem="foa-Dy-cdI" firstAttribute="leading" secondItem="NCG-ss-q9p" secondAttribute="leading" id="c6U-5a-51S"/>
+                            <constraint firstItem="0tL-eq-DIe" firstAttribute="top" secondItem="EpU-gg-Rqk" secondAttribute="bottom" constant="31" id="mVR-vG-8wR"/>
+                            <constraint firstItem="EpU-gg-Rqk" firstAttribute="leading" secondItem="NCG-ss-q9p" secondAttribute="leading" constant="33" id="mY0-cJ-HzC"/>
+                            <constraint firstItem="0tL-eq-DIe" firstAttribute="centerX" secondItem="foa-Dy-cdI" secondAttribute="centerX" id="sxN-6C-MQs"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Βιογραφία" image="resume" id="sIc-WV-81R"/>
+                    <connections>
+                        <outlet property="textView" destination="foa-Dy-cdI" id="lge-jw-lkQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3o-kI-SiP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-376.3358778625954" y="-704.22535211267609"/>
+        </scene>
+        <!--Αρχική-->
+        <scene sceneID="5aj-or-mDP">
+            <objects>
+                <viewController id="o9e-G1-li6" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dFy-Wf-s96">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Px7-yE-091"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Αρχική" image="home" id="if4-x2-UXN"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qky-PV-G0g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-376.3358778625954" y="-704.22535211267609"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="91u-JN-Ney">
+            <objects>
+                <tabBarController id="BL5-jU-TUo" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0qs-m3-EN3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="o9e-G1-li6" kind="relationship" relationship="viewControllers" id="ByU-8P-7KM"/>
+                        <segue destination="hCf-O8-B2E" kind="relationship" relationship="viewControllers" id="BNn-l0-lVP"/>
+                        <segue destination="CSn-Ce-5KN" kind="relationship" relationship="viewControllers" id="lY0-nH-hI9"/>
+                        <segue destination="YF9-ud-P9B" kind="relationship" relationship="viewControllers" id="ZuB-q2-BC6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cI0-38-Lp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-376" y="-704"/>
+        </scene>
+        <!--Multimedia-->
+        <scene sceneID="1mE-Rd-Wje">
+            <objects>
+                <viewController id="8Q7-aY-e63" customClass="Multimedia" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QXe-zP-nuf">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="hfI-2Q-YEd">
+                                <rect key="frame" x="0.0" y="81" width="393" height="688"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="t3a-8A-ItQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="173"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ΑΓΙΟΣ ΝΕΚΤΑΡΙΟΣ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fi2-3v-eDV">
+                                            <rect key="frame" x="125.33333333333333" y="118" width="142.33333333333337" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="3Yb-34-oOP"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agiosnektarios" translatesAutoresizingMaskIntoConstraints="NO" id="dfA-kV-zT6">
+                                            <rect key="frame" x="76.666666666666671" y="0.0" width="239.66666666666663" height="110"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="Fi2-3v-eDV" secondAttribute="bottom" constant="10" id="CFa-qa-Fpm"/>
+                                        <constraint firstItem="dfA-kV-zT6" firstAttribute="leading" secondItem="t3a-8A-ItQ" secondAttribute="leading" constant="76.666666666666686" id="JvU-jC-Due"/>
+                                        <constraint firstItem="dfA-kV-zT6" firstAttribute="centerX" secondItem="Fi2-3v-eDV" secondAttribute="centerX" id="Jw1-vn-xqy"/>
+                                        <constraint firstItem="dfA-kV-zT6" firstAttribute="top" secondItem="t3a-8A-ItQ" secondAttribute="top" id="Zdl-Qc-7Fd"/>
+                                        <constraint firstItem="dfA-kV-zT6" firstAttribute="centerX" secondItem="t3a-8A-ItQ" secondAttribute="centerX" id="aIl-Lf-d1x"/>
+                                        <constraint firstItem="Fi2-3v-eDV" firstAttribute="top" secondItem="dfA-kV-zT6" secondAttribute="bottom" constant="8" id="o1k-0a-1PD"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="84" id="kXU-5s-7fA" customClass="MultimediaCell">
+                                        <rect key="frame" x="0.0" y="223" width="393" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kXU-5s-7fA" id="0Cz-ZN-xqv">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="84"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="candle.gif" translatesAutoresizingMaskIntoConstraints="NO" id="04Z-hR-yWV">
+                                                    <rect key="frame" x="0.0" y="-59" width="104" height="202"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eZY-fe-wda">
+                                                    <rect key="frame" x="175" y="10" width="361" height="84"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="04Z-hR-yWV" firstAttribute="top" secondItem="0Cz-ZN-xqv" secondAttribute="topMargin" constant="-70" id="X6d-J7-uGt"/>
+                                                <constraint firstItem="04Z-hR-yWV" firstAttribute="leading" secondItem="0Cz-ZN-xqv" secondAttribute="leadingMargin" constant="-20" id="h6A-JY-Kve"/>
+                                                <constraint firstItem="eZY-fe-wda" firstAttribute="leading" secondItem="04Z-hR-yWV" secondAttribute="trailing" constant="71" id="jHQ-T7-e1j"/>
+                                                <constraint firstItem="04Z-hR-yWV" firstAttribute="centerY" secondItem="0Cz-ZN-xqv" secondAttribute="centerY" id="lS0-Yb-rd1"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <viewLayoutGuide key="safeArea" id="A4D-4X-hob"/>
+                                        <connections>
+                                            <outlet property="lblDescription" destination="eZY-fe-wda" id="9Is-v3-Lrf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FHZ-Uq-ovK"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZIk-HL-Igp"/>
+                    <connections>
+                        <outlet property="multimedia" destination="hfI-2Q-YEd" id="eNg-Ol-vH3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aJb-ZC-Wct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.58015267175573" y="-1381.6901408450706"/>
+        </scene>
+        <!--Miracles View Controller-->
+        <scene sceneID="nD5-gw-WaS">
+            <objects>
+                <viewController storyboardIdentifier="MiraclesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="6zZ-TY-20w" customClass="MiraclesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4yB-38-aNH">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="W6r-qQ-6vp">
+                                <rect key="frame" x="0.0" y="60" width="393" height="690"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="tintColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="rZX-HT-dNW">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="173"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ΑΓΙΟΣ ΝΕΚΤΑΡΙΟΣ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yg-qN-GpG">
+                                            <rect key="frame" x="125.33333333333333" y="118" width="142.33333333333337" height="45"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="gaQ-0r-zjg"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agiosnektarios" translatesAutoresizingMaskIntoConstraints="NO" id="QsD-6N-uVu">
+                                            <rect key="frame" x="76.666666666666686" y="0.0" width="240" height="110"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="240" id="nC4-Lu-1JH"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstItem="1yg-qN-GpG" firstAttribute="top" secondItem="QsD-6N-uVu" secondAttribute="bottom" constant="8" id="chs-hr-Paw"/>
+                                        <constraint firstAttribute="bottom" secondItem="1yg-qN-GpG" secondAttribute="bottom" constant="10" id="ecP-e0-Omd"/>
+                                        <constraint firstItem="QsD-6N-uVu" firstAttribute="centerX" secondItem="rZX-HT-dNW" secondAttribute="centerX" id="frE-F7-A61"/>
+                                        <constraint firstItem="QsD-6N-uVu" firstAttribute="centerX" secondItem="1yg-qN-GpG" secondAttribute="centerX" id="t0a-MH-kg4"/>
+                                        <constraint firstItem="QsD-6N-uVu" firstAttribute="top" secondItem="rZX-HT-dNW" secondAttribute="top" id="uTz-6i-y2Z"/>
+                                    </constraints>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="90" id="oLJ-VE-EhW" customClass="MiraclesCellsTableViewCell">
+                                        <rect key="frame" x="0.0" y="223" width="393" height="90"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oLJ-VE-EhW" id="kQ0-5p-mwm">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="90"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="b6j-QD-427">
+                                                    <rect key="frame" x="8" y="20" width="279" height="55"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="APb-dM-Wvm">
+                                                    <rect key="frame" x="261" y="15" width="194" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Διαβασέ το"/>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <viewLayoutGuide key="safeArea" id="zkF-CK-Fmg"/>
+                                        <connections>
+                                            <outlet property="btnReadIt" destination="APb-dM-Wvm" id="GV9-Uv-c7e"/>
+                                            <outlet property="lblDescription" destination="b6j-QD-427" id="Axg-o0-COK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="M6z-NK-tWv"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="W6r-qQ-6vp" firstAttribute="top" secondItem="4yB-38-aNH" secondAttribute="topMargin" constant="-43" id="3cj-WL-cZS"/>
+                            <constraint firstItem="W6r-qQ-6vp" firstAttribute="leading" secondItem="4yB-38-aNH" secondAttribute="leading" id="MV8-6e-6Ck"/>
+                            <constraint firstAttribute="trailing" secondItem="W6r-qQ-6vp" secondAttribute="trailing" id="abr-bi-Xa7"/>
+                            <constraint firstItem="M6z-NK-tWv" firstAttribute="bottom" secondItem="W6r-qQ-6vp" secondAttribute="bottom" constant="19" id="sKb-si-rS6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kqb-Nt-FnI"/>
+                    <connections>
+                        <outlet property="tableView" destination="W6r-qQ-6vp" id="BJe-VR-pNn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ii3-eQ-ElM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2437.4045801526718" y="-2058.4507042253522"/>
+        </scene>
+        <!--Read Miracle View Controller-->
+        <scene sceneID="Gza-qa-rgh">
+            <objects>
+                <viewController storyboardIdentifier="ReadMiracleViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DVS-Vb-dn7" customClass="ReadMiracleViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HAv-wy-L1L">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="R2R-a2-AsZ">
+                                <rect key="frame" x="16" y="114" width="361" height="612"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9DQ-iK-TOp"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dRT-7a-2Xr"/>
+                    <connections>
+                        <outlet property="textView" destination="R2R-a2-AsZ" id="jeD-mJ-md4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aHA-Tn-TZp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1171.7557251908397" y="-2735.211267605634"/>
+        </scene>
+        <!--Θαύματα-->
+        <scene sceneID="tIK-LV-pFM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YF9-ud-P9B" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Θαύματα" image="miracle" id="QjC-rb-8B5"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ijt-er-aLq">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6zZ-TY-20w" kind="relationship" relationship="rootViewController" id="nVf-LK-kQh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7c5-xr-yeb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510.6870229007634" y="-2058.4507042253522"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="w3N-EE-fIF">
+            <objects>
+                <pageViewController storyboardIdentifier="PageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="none" id="bwb-mf-ctQ" customClass="PageViewController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="FBO-jE-ceW"/>
+                </pageViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jaG-2T-YAj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1005.3435114503816" y="-2823.2394366197186"/>
+        </scene>
+        <!--Page Content View Controller-->
+        <scene sceneID="UYq-4J-T3G">
+            <objects>
+                <viewController storyboardIdentifier="PageContentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PKQ-Sc-4N0" customClass="PageContentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FBu-6G-exz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5Uy-0i-oOb">
+                                <rect key="frame" x="0.0" y="101" width="443" height="773"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="39m-qY-CuH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="s9i-aG-ktY"/>
+                    <connections>
+                        <outlet property="imageView" destination="5Uy-0i-oOb" id="Kfl-Z7-dwr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YSW-We-RYI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1005.3435114503816" y="-2176.0563380281692"/>
+        </scene>
+        <!--Πολυμέσα-->
+        <scene sceneID="WPI-6g-Sle">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="CSn-Ce-5KN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Πολυμέσα" image="multimedia" id="1A8-wW-Utn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Naf-QY-2OZ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Q7-aY-e63" kind="relationship" relationship="rootViewController" id="xec-k7-Jx4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QxZ-Fa-swc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-822.13740458015263" y="-1381.6901408450706"/>
+        </scene>
+        <!--Books View Controller-->
+        <scene sceneID="hJD-go-A2N">
+            <objects>
+                <viewController storyboardIdentifier="BooksViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZIl-vi-GJJ" customClass="BooksViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="soA-i2-ziC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" id="aks-bP-CF9">
+                                <rect key="frame" x="0.0" y="94" width="406" height="772"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NGC-e9-uy5"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="aks-bP-CF9" id="L7i-cf-Fer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h7m-zi-Ztb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1677.0992366412213" y="-2176.0563380281692"/>
+        </scene>
+        <!--Video Player-->
+        <scene sceneID="lB8-QD-CRk">
+            <objects>
+                <viewController storyboardIdentifier="VideoPlayer" useStoryboardIdentifierAsRestorationIdentifier="YES" id="cjM-ra-jk2" customClass="VideoPlayer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MAe-Ic-1hw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agiosnektarios" id="mcC-bA-iwc">
+                                <rect key="frame" x="-23" y="109" width="440" height="538"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tu3-AK-5C5">
+                                <rect key="frame" x="168" y="716" width="56" height="6"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                                <connections>
+                                    <action selector="btnPlay:" destination="cjM-ra-jk2" eventType="touchUpInside" id="3tf-D7-lCD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jp9-JO-SpZ"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnPlay" destination="tu3-AK-5C5" id="HgR-8E-YOC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAY-KV-yCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3295.419847328244" y="-2794.3661971830988"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="agiosnektarios" width="2048" height="2048"/>
+        <image name="candle.gif" width="500" height="750"/>
+        <image name="home" width="32" height="32"/>
+        <image name="miracle" width="32" height="32"/>
+        <image name="multimedia" width="32" height="32"/>
+        <image name="papyrus" width="588" height="900"/>
+        <image name="resume" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

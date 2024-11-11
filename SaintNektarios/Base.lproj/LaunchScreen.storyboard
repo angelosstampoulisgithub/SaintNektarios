@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="G5e-tc-Svy">
+                                <rect key="frame" x="53" y="64" width="293" height="572"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ΑΓΙΟΥ ΝΕΚΤΑΡΙΟΥ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLF-Ic-Cb8">
+                                        <rect key="frame" x="20" y="49" width="253" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Th7-e3-aXP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Η ΖΩΗ ΤΟΥ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dc-qd-BIf">
+                                        <rect key="frame" x="57" y="0.0" width="153.66666666666666" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="8OR-gU-n5U"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" systemColor="systemOrangeColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agios" translatesAutoresizingMaskIntoConstraints="NO" id="HfU-DV-xGa">
+                                        <rect key="frame" x="20" y="78" width="253" height="595"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="HfU-DV-xGa" secondAttribute="bottom" constant="-101" id="0AZ-Ko-X25"/>
+                                    <constraint firstItem="HfU-DV-xGa" firstAttribute="top" secondItem="2Dc-qd-BIf" secondAttribute="bottom" constant="57" id="1Gu-cW-YiL"/>
+                                    <constraint firstItem="2Dc-qd-BIf" firstAttribute="leading" secondItem="G5e-tc-Svy" secondAttribute="leading" constant="57" id="DZ9-Pe-ZCj"/>
+                                    <constraint firstItem="gLF-Ic-Cb8" firstAttribute="leading" secondItem="G5e-tc-Svy" secondAttribute="leading" constant="20" id="dLh-FK-8cW"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Dc-qd-BIf" secondAttribute="trailing" constant="20" symbolic="YES" id="gfA-5f-7HV"/>
+                                    <constraint firstItem="HfU-DV-xGa" firstAttribute="leading" secondItem="gLF-Ic-Cb8" secondAttribute="leading" id="icI-hf-WNk"/>
+                                    <constraint firstItem="gLF-Ic-Cb8" firstAttribute="top" secondItem="2Dc-qd-BIf" secondAttribute="bottom" constant="28" id="lvy-0f-kTs"/>
+                                    <constraint firstItem="2Dc-qd-BIf" firstAttribute="top" secondItem="G5e-tc-Svy" secondAttribute="top" id="oqS-vd-2It"/>
+                                    <constraint firstItem="HfU-DV-xGa" firstAttribute="centerX" secondItem="G5e-tc-Svy" secondAttribute="centerX" id="pxq-k7-7DY"/>
+                                    <constraint firstItem="HfU-DV-xGa" firstAttribute="trailing" secondItem="gLF-Ic-Cb8" secondAttribute="trailing" id="zGo-lT-GXB"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copyright (C) 2024 Angelos Staboulis" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aAZ-Lg-YJk">
+                                <rect key="frame" x="27" y="746" width="350" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemOrangeColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aAZ-Lg-YJk" secondAttribute="bottom" constant="51" id="7Q8-Ra-dnd"/>
+                            <constraint firstItem="aAZ-Lg-YJk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="B0G-cc-vFf"/>
+                            <constraint firstItem="aAZ-Lg-YJk" firstAttribute="trailing" secondItem="Ze5-6b-2t3" secondAttribute="trailingMargin" id="UVO-2z-slh"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="agios" width="672" height="960"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

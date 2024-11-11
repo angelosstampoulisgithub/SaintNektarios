@@ -1,0 +1,583 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D66345412CE16F2F00F34D21 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66345402CE16F2F00F34D21 /* WebKit.framework */; };
+		D66345482CE1780F00F34D21 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D66345472CE1780F00F34D21 /* AVKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D6DE24E62CDF8E5300C882DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6DE24C22CDF8E5000C882DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6DE24C92CDF8E5000C882DA;
+			remoteInfo = SaintNektarios;
+		};
+		D6DE24F02CDF8E5300C882DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D6DE24C22CDF8E5000C882DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D6DE24C92CDF8E5000C882DA;
+			remoteInfo = SaintNektarios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D66345402CE16F2F00F34D21 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		D66345472CE1780F00F34D21 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		D6DE24CA2CDF8E5000C882DA /* SaintNektarios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaintNektarios.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DE24E52CDF8E5300C882DA /* SaintNektariosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaintNektariosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DE24EF2CDF8E5300C882DA /* SaintNektariosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaintNektariosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D6DE24F72CDF8E5300C882DA /* Exceptions for "SaintNektarios" folder in "SaintNektarios" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D6DE24C92CDF8E5000C882DA /* SaintNektarios */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		D6DE24CC2CDF8E5000C882DA /* SaintNektarios */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D6DE24F72CDF8E5300C882DA /* Exceptions for "SaintNektarios" folder in "SaintNektarios" target */,
+			);
+			path = SaintNektarios;
+			sourceTree = "<group>";
+		};
+		D6DE24E82CDF8E5300C882DA /* SaintNektariosTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaintNektariosTests;
+			sourceTree = "<group>";
+		};
+		D6DE24F22CDF8E5300C882DA /* SaintNektariosUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SaintNektariosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6DE24C72CDF8E5000C882DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D66345482CE1780F00F34D21 /* AVKit.framework in Frameworks */,
+				D66345412CE16F2F00F34D21 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DE24E22CDF8E5300C882DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DE24EC2CDF8E5300C882DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D663453F2CE16F2E00F34D21 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D66345472CE1780F00F34D21 /* AVKit.framework */,
+				D66345402CE16F2F00F34D21 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6DE24C12CDF8E5000C882DA = {
+			isa = PBXGroup;
+			children = (
+				D6DE24CC2CDF8E5000C882DA /* SaintNektarios */,
+				D6DE24E82CDF8E5300C882DA /* SaintNektariosTests */,
+				D6DE24F22CDF8E5300C882DA /* SaintNektariosUITests */,
+				D663453F2CE16F2E00F34D21 /* Frameworks */,
+				D6DE24CB2CDF8E5000C882DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6DE24CB2CDF8E5000C882DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6DE24CA2CDF8E5000C882DA /* SaintNektarios.app */,
+				D6DE24E52CDF8E5300C882DA /* SaintNektariosTests.xctest */,
+				D6DE24EF2CDF8E5300C882DA /* SaintNektariosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6DE24C92CDF8E5000C882DA /* SaintNektarios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6DE24F82CDF8E5300C882DA /* Build configuration list for PBXNativeTarget "SaintNektarios" */;
+			buildPhases = (
+				D6DE24C62CDF8E5000C882DA /* Sources */,
+				D6DE24C72CDF8E5000C882DA /* Frameworks */,
+				D6DE24C82CDF8E5000C882DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D6DE24CC2CDF8E5000C882DA /* SaintNektarios */,
+			);
+			name = SaintNektarios;
+			packageProductDependencies = (
+			);
+			productName = SaintNektarios;
+			productReference = D6DE24CA2CDF8E5000C882DA /* SaintNektarios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D6DE24E42CDF8E5300C882DA /* SaintNektariosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6DE24FD2CDF8E5300C882DA /* Build configuration list for PBXNativeTarget "SaintNektariosTests" */;
+			buildPhases = (
+				D6DE24E12CDF8E5300C882DA /* Sources */,
+				D6DE24E22CDF8E5300C882DA /* Frameworks */,
+				D6DE24E32CDF8E5300C882DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6DE24E72CDF8E5300C882DA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D6DE24E82CDF8E5300C882DA /* SaintNektariosTests */,
+			);
+			name = SaintNektariosTests;
+			packageProductDependencies = (
+			);
+			productName = SaintNektariosTests;
+			productReference = D6DE24E52CDF8E5300C882DA /* SaintNektariosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D6DE24EE2CDF8E5300C882DA /* SaintNektariosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6DE25002CDF8E5300C882DA /* Build configuration list for PBXNativeTarget "SaintNektariosUITests" */;
+			buildPhases = (
+				D6DE24EB2CDF8E5300C882DA /* Sources */,
+				D6DE24EC2CDF8E5300C882DA /* Frameworks */,
+				D6DE24ED2CDF8E5300C882DA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D6DE24F12CDF8E5300C882DA /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D6DE24F22CDF8E5300C882DA /* SaintNektariosUITests */,
+			);
+			name = SaintNektariosUITests;
+			packageProductDependencies = (
+			);
+			productName = SaintNektariosUITests;
+			productReference = D6DE24EF2CDF8E5300C882DA /* SaintNektariosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6DE24C22CDF8E5000C882DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					D6DE24C92CDF8E5000C882DA = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					D6DE24E42CDF8E5300C882DA = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D6DE24C92CDF8E5000C882DA;
+					};
+					D6DE24EE2CDF8E5300C882DA = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D6DE24C92CDF8E5000C882DA;
+					};
+				};
+			};
+			buildConfigurationList = D6DE24C52CDF8E5000C882DA /* Build configuration list for PBXProject "SaintNektarios" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D6DE24C12CDF8E5000C882DA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D6DE24CB2CDF8E5000C882DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6DE24C92CDF8E5000C882DA /* SaintNektarios */,
+				D6DE24E42CDF8E5300C882DA /* SaintNektariosTests */,
+				D6DE24EE2CDF8E5300C882DA /* SaintNektariosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6DE24C82CDF8E5000C882DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DE24E32CDF8E5300C882DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DE24ED2CDF8E5300C882DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6DE24C62CDF8E5000C882DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DE24E12CDF8E5300C882DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6DE24EB2CDF8E5300C882DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D6DE24E72CDF8E5300C882DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6DE24C92CDF8E5000C882DA /* SaintNektarios */;
+			targetProxy = D6DE24E62CDF8E5300C882DA /* PBXContainerItemProxy */;
+		};
+		D6DE24F12CDF8E5300C882DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D6DE24C92CDF8E5000C882DA /* SaintNektarios */;
+			targetProxy = D6DE24F02CDF8E5300C882DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D6DE24F92CDF8E5300C882DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaintNektarios/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.template.SaintNektarios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D6DE24FA2CDF8E5300C882DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SaintNektarios/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.template.SaintNektarios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D6DE24FB2CDF8E5300C882DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6DE24FC2CDF8E5300C882DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6DE24FE2CDF8E5300C882DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.template.SaintNektariosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaintNektarios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SaintNektarios";
+			};
+			name = Debug;
+		};
+		D6DE24FF2CDF8E5300C882DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.template.SaintNektariosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SaintNektarios.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SaintNektarios";
+			};
+			name = Release;
+		};
+		D6DE25012CDF8E5300C882DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.template.SaintNektariosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaintNektarios;
+			};
+			name = Debug;
+		};
+		D6DE25022CDF8E5300C882DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K6LJCT8RAA;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.template.SaintNektariosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SaintNektarios;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6DE24C52CDF8E5000C882DA /* Build configuration list for PBXProject "SaintNektarios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6DE24FB2CDF8E5300C882DA /* Debug */,
+				D6DE24FC2CDF8E5300C882DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6DE24F82CDF8E5300C882DA /* Build configuration list for PBXNativeTarget "SaintNektarios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6DE24F92CDF8E5300C882DA /* Debug */,
+				D6DE24FA2CDF8E5300C882DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6DE24FD2CDF8E5300C882DA /* Build configuration list for PBXNativeTarget "SaintNektariosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6DE24FE2CDF8E5300C882DA /* Debug */,
+				D6DE24FF2CDF8E5300C882DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6DE25002CDF8E5300C882DA /* Build configuration list for PBXNativeTarget "SaintNektariosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6DE25012CDF8E5300C882DA /* Debug */,
+				D6DE25022CDF8E5300C882DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6DE24C22CDF8E5000C882DA /* Project object */;
+}
