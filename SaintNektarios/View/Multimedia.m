@@ -4,7 +4,7 @@
 //
 //  Created by Angelos Staboulis on 10/11/24.
 //
-
+#import "ImageIO/CGImageAnimation.h"
 #import "Multimedia.h"
 #import "PageViewController.h"
 #import "MultimediaCell.h"
@@ -31,30 +31,31 @@
     return [_array count];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 70.0;
+    return 120.0;
 }
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    if(indexPath.row==0){
+-(void) openPageViewController:(NSInteger) index{
+    if(index==0){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         _read = (PageViewController*)[storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
         [_read setModalPresentationStyle:UIModalPresentationFullScreen];
         [[self navigationController] pushViewController:_read animated:TRUE];
     }
-    if(indexPath.row==1){
+    if(index==1){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         _books = (BooksViewController*)[storyboard instantiateViewControllerWithIdentifier:@"BooksViewController"];
         [_books setModalPresentationStyle:UIModalPresentationFullScreen];
         [[self navigationController] pushViewController:_books animated:TRUE];
     }
     
-    if(indexPath.row==2){
+    if(index==2){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         _videoPlayerApolitikio = (VideoPlayer*)[storyboard instantiateViewControllerWithIdentifier:@"VideoPlayer"];
         [_videoPlayerApolitikio setModalPresentationStyle:UIModalPresentationFullScreen];
         _videoPlayerApolitikio.index = 0;
         [[self navigationController] pushViewController:_videoPlayerApolitikio animated:TRUE];
     }
-    if(indexPath.row==3){
+    
+    if(index==3){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         _videoAgni = (VideoPlayer*)[storyboard instantiateViewControllerWithIdentifier:@"VideoPlayer"];
         [_videoAgni setModalPresentationStyle:UIModalPresentationFullScreen];
@@ -62,13 +63,20 @@
         [[self navigationController] pushViewController:_videoAgni animated:TRUE];
     }
 }
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MultimediaCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     NSString *getText = [NSString stringWithFormat:@"%@",[_array objectAtIndex:indexPath.row]];
 
     [[cell lblDescription] setText:getText];
+    [[cell btnPlay] addTarget:self action:@selector(playClick:)  forControlEvents:UIControlEventTouchDown];
+    [[cell btnPlay] setTag:indexPath.row];
 
     return cell;
+}
+-(void) playClick:(UIButton*) button{
+    NSInteger tag = [button tag];
+    [self openPageViewController:tag];
 }
 /*
 #pragma mark - Navigation

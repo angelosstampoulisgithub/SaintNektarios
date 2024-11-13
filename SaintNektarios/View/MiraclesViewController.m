@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self initializeTableView];
+    
+}
+-(void) initializeTableView{
     _array = [[NSMutableArray alloc] init];
     [_array addObject:@"1. Θεραπεία της καρκινοπαθούς γυναίκας"];
     [_array addObject:@"2. Η θεραπεία του παράλυτου άντρα"];
@@ -26,7 +30,6 @@
     [_tableView setDelegate:self];
     [_tableView setDataSource:self];
     [_tableView registerNib:[UINib nibWithNibName:@"MiraclesCellsTableViewCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [_array count];

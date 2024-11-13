@@ -11,9 +11,17 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    [self playAnimatedGif];
 }
-
+-(void) playAnimatedGif{
+    NSString *filename = [[NSBundle mainBundle] pathForResource:@"candle" ofType:@"gif"];
+    NSURL *urlFilename = [NSURL fileURLWithPath:filename];
+    CGAnimateImageAtURLWithBlock((CFURLRef)urlFilename, nil, ^(size_t index, CGImageRef  _Nonnull image, bool * _Nonnull stop) {
+        UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageWithCGImage:image]];
+        [imageView setFrame:CGRectMake(0, 0, 100, 95)];
+        [self addSubview:imageView];
+    });
+}
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 

@@ -15,6 +15,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
+    // Do any additional setup after loading the view.
+}
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     [_btnPlay setBackgroundColor:[UIColor redColor]];
     [_btnPlay setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
@@ -36,9 +41,7 @@
         NSURL *urlPlayerAgni = [NSURL fileURLWithPath:agni];
         _avPlayer = [[AVPlayer alloc] initWithURL:urlPlayerAgni];
     }
-    // Do any additional setup after loading the view.
 }
-
 /*
 #pragma mark - Navigation
 

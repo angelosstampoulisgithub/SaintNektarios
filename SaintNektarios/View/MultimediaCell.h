@@ -10,6 +10,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MultimediaCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *lblDescription;
+@property (weak, nonatomic) IBOutlet UIButton *btnPlay;
 
 
 @end
