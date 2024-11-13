@@ -15,10 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 - (IBAction)btnPlay:(id)sender;
 @property bool isClickedApolitikio;
 @property bool isClickedAgni;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property int index;
-@property AVAudioPlayer *_audioPlayer;
-@property AVPlayer * avPlayer;
+@property AVPlayer *apolytikio;
+@property AVPlayer *ymnos;
+@property (weak, nonatomic) IBOutlet UIButton *btnBack;
+- (IBAction)btnBack:(id)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
+
 @end
 
 NS_ASSUME_NONNULL_END

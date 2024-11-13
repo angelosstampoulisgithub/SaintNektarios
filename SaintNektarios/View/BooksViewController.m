@@ -35,4 +35,7 @@
 }
 */
 
+- (IBAction)btnBack:(id)sender {
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+}
 @end

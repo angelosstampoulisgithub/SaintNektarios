@@ -45,7 +45,7 @@
         NSString *miracle5 = [NSString stringWithFormat:@"%@", [[_viewModel createMiracles] objectAtIndex:4].miracle];
         [_textView setText:miracle5];
     }
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+   
 
 }
 /*
@@ -58,4 +58,7 @@
 }
 */
 
+- (IBAction)backButton:(id)sender {
+    [self dismissViewControllerAnimated:TRUE completion:nil];
+}
 @end

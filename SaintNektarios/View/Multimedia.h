@@ -13,6 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Multimedia : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UIView *headerView;
 @property (weak, nonatomic) IBOutlet UITableView *multimedia;
 @property NSMutableArray *array;
 @property PageViewController* read;

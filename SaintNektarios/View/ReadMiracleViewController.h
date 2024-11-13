@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ReadMiracleViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextView *textView;
+- (IBAction)backButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *backButton;
 
 @property NSInteger pageIndex;
 @property NSMutableArray<MiraclesModel*>  *miracleArray;

@@ -6,7 +6,7 @@
 //
 
 #import "VideoPlayer.h"
-
+#import "Multimedia.h"
 @interface VideoPlayer ()
 
 @end
@@ -27,21 +27,18 @@
     [_btnPlay setFrame:CGRectMake((bounds.size.width / 2.0)-45, (bounds.size.height / 2.0)+250, 80, 75)];
     [[_btnPlay layer] setCornerRadius:22];
     if (_index==0){
-        [[self navigationItem] setTitle:@"Απολυτίκιο Αγίου Νεκταρίου"];
         NSString *apolitikio = [[NSBundle mainBundle] pathForResource:@"apolitikio" ofType:@"mp3"];
         NSURL *urlPlayerApolitikio = [NSURL fileURLWithPath:apolitikio];
-        NSError *error;
-        __audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:urlPlayerApolitikio error:&error];
-        [__audioPlayer prepareToPlay];
+        _apolytikio = [[AVPlayer alloc] initWithURL:urlPlayerApolitikio];
     }
     if (_index==1){
-        [[self navigationItem] setTitle:@"Υμνος στην Παναγία"];
-
-        NSString *agni = [[NSBundle mainBundle] pathForResource:@"agni" ofType:@"mp3"];
-        NSURL *urlPlayerAgni = [NSURL fileURLWithPath:agni];
-        _avPlayer = [[AVPlayer alloc] initWithURL:urlPlayerAgni];
+        NSString *ymnos = [[NSBundle mainBundle] pathForResource:@"agni" ofType:@"mp3"];
+        NSURL *urlPlayerYmnos = [NSURL fileURLWithPath:ymnos];
+        _ymnos = [[AVPlayer alloc] initWithURL:urlPlayerYmnos];
     }
+   
 }
+
 /*
 #pragma mark - Navigation
 
@@ -51,15 +48,14 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 - (IBAction)btnPlay:(id)sender {
     if (_index == 0) {
         _isClickedApolitikio = !_isClickedApolitikio;
         if (_isClickedApolitikio){
-            [__audioPlayer play];
+            [_apolytikio play];
             [_btnPlay setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
         }else{
-            [__audioPlayer pause];
+            [_apolytikio pause];
             [_btnPlay setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
             
         }
@@ -67,13 +63,22 @@
     if (_index == 1) {
         _isClickedAgni = !_isClickedAgni;
         if (_isClickedAgni){
-            [_avPlayer play];
+            [_ymnos play];
             [_btnPlay setImage:[UIImage imageNamed:@"pause"] forState:UIControlStateNormal];
         }else{
-            [_avPlayer pause];
+            [_ymnos pause];
             [_btnPlay setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
             
         }
     }
+}
+- (IBAction)btnBack:(id)sender {
+    _apolytikio = nil;
+    _ymnos = nil;
+    for (UIView *view in [self.view subviews])
+    {
+        [view removeFromSuperview];
+    }
+    [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 @end

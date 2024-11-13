@@ -51,7 +51,7 @@
     _read = (ReadMiracleViewController*)[storyboard instantiateViewControllerWithIdentifier:@"ReadMiracleViewController"];
     [_read setModalPresentationStyle:UIModalPresentationFullScreen];
     _read.pageIndex = tag;
-    [[self navigationController] pushViewController:_read animated:true];
+    [self presentViewController:_read animated:TRUE completion:nil];
 }
 /*
 #pragma mark - Navigation

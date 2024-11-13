@@ -42,4 +42,17 @@
 }
 */
 
+- (IBAction)btnBackButton:(id)sender {
+    [_imageArray removeAllObjects];
+    for (UIView *view in [self.view subviews])
+    {
+        [view removeFromSuperview];
+    }
+    [self dismissViewControllerAnimated:TRUE completion:^{
+        for (UIView *view in [self.view subviews])
+        {
+            [view removeFromSuperview];
+        }
+    }];
+}
 @end

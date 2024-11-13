@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property NSUInteger pageIndex;
 @property NSMutableArray<UIImage*> *imageArray;
+@property (weak, nonatomic) IBOutlet UIButton *btnBackButton;
+- (IBAction)btnBackButton:(id)sender;
 
 @end
 

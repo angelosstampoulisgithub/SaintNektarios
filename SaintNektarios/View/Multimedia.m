@@ -17,16 +17,26 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _array = [[NSMutableArray alloc] init];
-    [_array addObject:@"Φωτογραφικό Υλικό"];
-    [_array addObject:@"Βιβλία-Εκδόσεις"];
-    [_array addObject:@"Απολυτίκιο Αγίου Νεκταρίου"];
-    [_array addObject:@"Υμνος στην Παναγία"];
-    [_multimedia setDelegate:self];
-    [_multimedia setDataSource:self];
-    [_multimedia registerNib:[UINib nibWithNibName:@"MultimediaCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+
     // Do any additional setup after loading the view.
 }
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self->_array = [[NSMutableArray alloc] init];
+        [self->_array addObject:@"Φωτογραφικό Υλικό"];
+        [self->_array addObject:@"Βιβλία-Εκδόσεις"];
+        [self->_array addObject:@"Απολυτίκιο Αγίου Νεκταρίου"];
+        [self->_array addObject:@"Υμνος στην Παναγία"];
+        [self->_multimedia setDelegate:self];
+        [self->_multimedia setDataSource:self];
+        [self->_multimedia registerNib:[UINib nibWithNibName:@"MultimediaCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+        [self->_multimedia reloadData];
+    });
+ 
+}
+
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return [_array count];
 }
@@ -38,13 +48,14 @@
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         _read = (PageViewController*)[storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
         [_read setModalPresentationStyle:UIModalPresentationFullScreen];
-        [[self navigationController] pushViewController:_read animated:TRUE];
+        [self presentViewController:_read animated:false completion:nil];
+
     }
     if(index==1){
         UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
         _books = (BooksViewController*)[storyboard instantiateViewControllerWithIdentifier:@"BooksViewController"];
         [_books setModalPresentationStyle:UIModalPresentationFullScreen];
-        [[self navigationController] pushViewController:_books animated:TRUE];
+        [self presentViewController:_books animated:false completion:nil];
     }
     
     if(index==2){
@@ -52,7 +63,8 @@
         _videoPlayerApolitikio = (VideoPlayer*)[storyboard instantiateViewControllerWithIdentifier:@"VideoPlayer"];
         [_videoPlayerApolitikio setModalPresentationStyle:UIModalPresentationFullScreen];
         _videoPlayerApolitikio.index = 0;
-        [[self navigationController] pushViewController:_videoPlayerApolitikio animated:TRUE];
+        [self presentViewController:_videoPlayerApolitikio animated:false completion:nil];
+
     }
     
     if(index==3){
@@ -60,7 +72,9 @@
         _videoAgni = (VideoPlayer*)[storyboard instantiateViewControllerWithIdentifier:@"VideoPlayer"];
         [_videoAgni setModalPresentationStyle:UIModalPresentationFullScreen];
         _videoAgni.index =1;
-        [[self navigationController] pushViewController:_videoAgni animated:TRUE];
+        [self presentViewController:_videoAgni animated:false completion:nil];
+
+
     }
 }
 

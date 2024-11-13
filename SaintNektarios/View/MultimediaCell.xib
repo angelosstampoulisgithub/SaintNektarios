@@ -18,44 +18,36 @@
                 <rect key="frame" x="0.0" y="0.0" width="409" height="103"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Eo-IY-x7z">
-                        <rect key="frame" x="-7" y="0.0" width="346" height="152"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XcI-nV-86b">
+                        <rect key="frame" x="-1" y="1" width="414" height="102"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WY5-K1-cDu">
-                                <rect key="frame" x="8" y="-2" width="126" height="105"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KFG-Dh-btO">
-                                <rect key="frame" x="142" y="28" width="196" height="40"/>
+                                <rect key="frame" x="20" y="20" width="320" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" name="AccentColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="RG5-Te-nZf">
+                                <rect key="frame" x="348" y="32" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="play"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="WY5-K1-cDu" firstAttribute="leading" secondItem="4Eo-IY-x7z" secondAttribute="leading" constant="8" id="Jup-F7-clY"/>
-                            <constraint firstItem="WY5-K1-cDu" firstAttribute="top" secondItem="4Eo-IY-x7z" secondAttribute="top" constant="-2" id="jLc-Ek-0xk"/>
-                            <constraint firstAttribute="width" constant="346" id="oTZ-jz-POB"/>
-                            <constraint firstItem="WY5-K1-cDu" firstAttribute="centerY" secondItem="KFG-Dh-btO" secondAttribute="centerY" constant="2.5" id="oWZ-xD-caz"/>
-                            <constraint firstItem="KFG-Dh-btO" firstAttribute="leading" secondItem="WY5-K1-cDu" secondAttribute="trailing" constant="8" id="vcc-OO-UG5"/>
-                            <constraint firstAttribute="height" constant="152" id="xuJ-N7-pSX"/>
+                            <constraint firstAttribute="width" constant="414" id="iHp-cU-Z4h"/>
+                            <constraint firstAttribute="height" constant="102" id="wLp-eX-4LB"/>
                         </constraints>
                     </view>
-                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG5-Te-nZf">
-                        <rect key="frame" x="347" y="33" width="46" height="30"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="play"/>
-                    </button>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="4Eo-IY-x7z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="XyP-PX-2T7"/>
-                    <constraint firstItem="4Eo-IY-x7z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-7" id="fyY-V3-gzj"/>
+                    <constraint firstItem="XcI-nV-86b" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="age-Ni-Mjx"/>
+                    <constraint firstItem="XcI-nV-86b" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-1" id="mpO-XD-dmo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
@@ -73,7 +65,7 @@
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
