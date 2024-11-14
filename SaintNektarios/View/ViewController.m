@@ -35,15 +35,19 @@
     NSString *filename = [[NSBundle mainBundle] pathForResource:@"candle" ofType:@"gif"];
     NSURL *urlFilename = [NSURL fileURLWithPath:filename];
     CGAnimateImageAtURLWithBlock((CFURLRef)urlFilename, nil, ^(size_t index, CGImageRef  _Nonnull image, bool * _Nonnull stop) {
+        UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(20,20,600,90)];
         UIImageView *leftImage = [[UIImageView alloc] initWithImage:[UIImage imageWithCGImage:image]];
-        [leftImage setFrame:CGRectMake(0, 90, 100, 95)];
-        [self.view addSubview:leftImage];
+        [leftImage setFrame:CGRectMake(90, 90, 100, 95)];
+        [headerView addSubview:leftImage];
         UIImageView *centerImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"agios"]];
-        [centerImage setFrame:CGRectMake(150,90, 100, 95)];
-        [self.view addSubview:centerImage];
+        [centerImage setFrame:CGRectMake(179,90, 110, 95)];
+        [headerView addSubview:centerImage];
         UIImageView *rightImage = [[UIImageView alloc] initWithImage:[UIImage imageWithCGImage:image]];
-        [rightImage setFrame:CGRectMake(300,90, 100, 95)];
-        [self.view addSubview:rightImage];
+        [rightImage setFrame:CGRectMake(272,90, 100, 95)];
+        [headerView addSubview:rightImage];
+        [self.view addSubview:headerView];
+        [headerView setTranslatesAutoresizingMaskIntoConstraints:FALSE];
+        [[headerView centerXAnchor] constraintEqualToAnchor:self.view.centerXAnchor constant:-220].active = TRUE;
     });
 }
 

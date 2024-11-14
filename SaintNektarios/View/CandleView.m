@@ -18,8 +18,8 @@
 - (void)setupView {
     self.backgroundColor = [UIColor colorWithRed:26/255.0 green:25/255.0 blue:25/255.0 alpha:1.0];
     [self animateBackground];
-
-    UIView *candleBody = [[UIView alloc] initWithFrame:CGRectMake((self.frame.size.width - 100) / 2, 350, 100, 400)];
+    int height = UIScreen.mainScreen.bounds.size.height - 350;
+    UIView *candleBody = [[UIView alloc] initWithFrame:CGRectMake((self.frame.size.width - 100) / 2, 350, 100, height)];
     candleBody.backgroundColor = [self gradientColor];
     [self addSubview:candleBody];
     UIView *candleFlames = [[UIView alloc] initWithFrame:CGRectMake(35, -120, 30, 100)];
