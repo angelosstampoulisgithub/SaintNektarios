@@ -125,14 +125,14 @@
                         <segue destination="o9e-G1-li6" kind="relationship" relationship="viewControllers" id="ByU-8P-7KM"/>
                         <segue destination="hCf-O8-B2E" kind="relationship" relationship="viewControllers" id="BNn-l0-lVP"/>
                         <segue destination="6zZ-TY-20w" kind="relationship" relationship="viewControllers" id="7MH-KJ-V90"/>
-                        <segue destination="8Q7-aY-e63" kind="relationship" relationship="viewControllers" id="FW7-QL-MqI"/>
+                        <segue destination="4az-YD-m7S" kind="relationship" relationship="viewControllers" id="FW7-QL-MqI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI0-38-Lp1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-376" y="-704"/>
         </scene>
-        <!--Πολυμέσα-->
+        <!--Multimedia-->
         <scene sceneID="1mE-Rd-Wje">
             <objects>
                 <viewController storyboardIdentifier="Multimedia" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Q7-aY-e63" customClass="Multimedia" sceneMemberID="viewController">
@@ -227,7 +227,7 @@
                         <viewLayoutGuide key="safeArea" id="FHZ-Uq-ovK"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Πολυμέσα" image="multimedia" id="C4c-zf-nrn"/>
+                    <navigationItem key="navigationItem" id="ZYo-ee-Bm7"/>
                     <connections>
                         <outlet property="headerView" destination="t3a-8A-ItQ" id="CKB-9f-o8B"/>
                         <outlet property="multimedia" destination="hfI-2Q-YEd" id="eNg-Ol-vH3"/>
@@ -235,7 +235,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aJb-ZC-Wct" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1958.0152671755725" y="-1381.6901408450706"/>
+            <point key="canvasLocation" x="2884.7328244274809" y="-1381.6901408450706"/>
         </scene>
         <!--Θαύματα-->
         <scene sceneID="nD5-gw-WaS">
@@ -413,40 +413,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="sNS-sO-gWM">
-                                <rect key="frame" x="16" y="33" width="361" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Album Φωτογραφιών" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KNr-YL-Ybt">
-                                        <rect key="frame" x="159" y="26" width="166" height="28"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cGY-nM-3hy">
-                                        <rect key="frame" x="-15" y="23" width="143" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="143" id="Bfl-pq-wgN"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Επιστροφή"/>
-                                        <connections>
-                                            <action selector="backButton:" destination="DVS-Vb-dn7" eventType="touchUpInside" id="uoX-cn-qaO"/>
-                                            <action selector="btnBack:" destination="ZIl-vi-GJJ" eventType="touchUpInside" id="WUc-Ez-SN6"/>
-                                            <action selector="btnBackButton:" destination="PKQ-Sc-4N0" eventType="touchUpInside" id="84t-sK-fgC"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="cGY-nM-3hy" firstAttribute="leading" secondItem="sNS-sO-gWM" secondAttribute="leading" constant="-15" id="2Ee-S0-mFh"/>
-                                    <constraint firstItem="cGY-nM-3hy" firstAttribute="top" secondItem="sNS-sO-gWM" secondAttribute="top" constant="23" id="G1V-LP-qpS"/>
-                                    <constraint firstItem="KNr-YL-Ybt" firstAttribute="leading" secondItem="cGY-nM-3hy" secondAttribute="trailing" constant="31" id="cjy-8r-xp1"/>
-                                    <constraint firstAttribute="trailing" secondItem="KNr-YL-Ybt" secondAttribute="trailing" constant="36" id="g2u-QF-cct"/>
-                                    <constraint firstItem="KNr-YL-Ybt" firstAttribute="top" secondItem="sNS-sO-gWM" secondAttribute="top" constant="26" id="qbV-k3-4CI"/>
-                                    <constraint firstItem="cGY-nM-3hy" firstAttribute="centerY" secondItem="KNr-YL-Ybt" secondAttribute="centerY" id="tke-Gz-TmO"/>
-                                </constraints>
-                            </view>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="5Uy-0i-oOb">
                                 <rect key="frame" x="0.0" y="101" width="443" height="773"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -456,7 +422,6 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="btnBackButton" destination="cGY-nM-3hy" id="q58-0K-PMP"/>
                         <outlet property="imageView" destination="5Uy-0i-oOb" id="Kfl-Z7-dwr"/>
                     </connections>
                 </viewController>
@@ -472,41 +437,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="N1k-Jr-8Ag">
-                                <rect key="frame" x="16" y="35" width="361" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Κατάλογος Βιβλίων" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fAx-8V-CPd">
-                                        <rect key="frame" x="159" y="26" width="166" height="28"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6NG-Ve-gMJ">
-                                        <rect key="frame" x="-15" y="23" width="143" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="143" id="ZaC-xO-KAo"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Επιστροφή"/>
-                                        <connections>
-                                            <action selector="backButton:" destination="DVS-Vb-dn7" eventType="touchUpInside" id="FLl-sh-xqK"/>
-                                            <action selector="btnBack:" destination="ZIl-vi-GJJ" eventType="touchUpInside" id="qGx-aR-Zwb"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="6NG-Ve-gMJ" firstAttribute="top" secondItem="N1k-Jr-8Ag" secondAttribute="top" constant="23" id="D7C-Sw-aUM"/>
-                                    <constraint firstItem="fAx-8V-CPd" firstAttribute="top" secondItem="N1k-Jr-8Ag" secondAttribute="top" constant="26" id="N6f-Pm-w24"/>
-                                    <constraint firstItem="fAx-8V-CPd" firstAttribute="leading" secondItem="6NG-Ve-gMJ" secondAttribute="trailing" constant="31" id="UvC-1i-wU7"/>
-                                    <constraint firstItem="6NG-Ve-gMJ" firstAttribute="leading" secondItem="N1k-Jr-8Ag" secondAttribute="leading" constant="-15" id="XNH-f2-z5I"/>
-                                    <constraint firstItem="6NG-Ve-gMJ" firstAttribute="centerY" secondItem="fAx-8V-CPd" secondAttribute="centerY" id="ccX-jq-37T"/>
-                                    <constraint firstAttribute="trailing" secondItem="fAx-8V-CPd" secondAttribute="trailing" constant="36" id="l6B-HB-Ds9"/>
-                                </constraints>
-                            </view>
-                            <wkWebView contentMode="scaleToFill" id="aks-bP-CF9">
-                                <rect key="frame" x="0.0" y="106" width="406" height="772"/>
+                            <wkWebView contentMode="scaleToFill" id="vrh-sE-AvZ">
+                                <rect key="frame" x="0.0" y="137" width="393" height="715"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -519,8 +451,7 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="btnBack" destination="6NG-Ve-gMJ" id="Q3a-CF-hKu"/>
-                        <outlet property="webView" destination="aks-bP-CF9" id="L7i-cf-Fer"/>
+                        <outlet property="webView" destination="vrh-sE-AvZ" id="U8A-xb-uzQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h7m-zi-Ztb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -535,43 +466,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" id="T6A-a6-wrR">
-                                <rect key="frame" x="16" y="33" width="361" height="86"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Audio Player" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clf-mG-jxP">
-                                        <rect key="frame" x="159" y="26" width="166" height="28"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndz-1C-9sX">
-                                        <rect key="frame" x="-15" y="23" width="143" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="143" id="kEe-UB-i1D"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Επιστροφή"/>
-                                        <connections>
-                                            <action selector="backButton:" destination="DVS-Vb-dn7" eventType="touchUpInside" id="xZF-LR-avI"/>
-                                            <action selector="btnBack:" destination="cjM-ra-jk2" eventType="touchUpInside" id="K7j-1A-eMA"/>
-                                            <action selector="btnBack:" destination="ZIl-vi-GJJ" eventType="touchUpInside" id="sbw-fa-pSp"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <viewLayoutGuide key="safeArea" id="bkZ-7Q-r1c"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="ndz-1C-9sX" firstAttribute="leading" secondItem="T6A-a6-wrR" secondAttribute="leading" constant="-15" id="0CI-u1-98Z"/>
-                                    <constraint firstAttribute="trailing" secondItem="clf-mG-jxP" secondAttribute="trailing" constant="36" id="K1J-07-Iud"/>
-                                    <constraint firstItem="clf-mG-jxP" firstAttribute="top" secondItem="T6A-a6-wrR" secondAttribute="top" constant="26" id="cJh-H7-Zhx"/>
-                                    <constraint firstItem="ndz-1C-9sX" firstAttribute="centerY" secondItem="clf-mG-jxP" secondAttribute="centerY" id="cx0-fd-BI5"/>
-                                    <constraint firstItem="ndz-1C-9sX" firstAttribute="top" secondItem="T6A-a6-wrR" secondAttribute="top" constant="23" id="fZf-ST-AtY"/>
-                                    <constraint firstItem="clf-mG-jxP" firstAttribute="leading" secondItem="ndz-1C-9sX" secondAttribute="trailing" constant="31" id="fh7-E8-qZa"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agiosnektarios" id="mcC-bA-iwc">
-                                <rect key="frame" x="-23" y="0.0" width="440" height="647"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" image="agiosnektarios" id="mcC-bA-iwc">
+                                <rect key="frame" x="0.0" y="117" width="393" height="530"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="tu3-AK-5C5">
@@ -588,7 +484,6 @@
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <connections>
-                        <outlet property="btnBack" destination="ndz-1C-9sX" id="6g3-W1-J04"/>
                         <outlet property="btnPlay" destination="tu3-AK-5C5" id="HgR-8E-YOC"/>
                         <outlet property="imageView" destination="mcC-bA-iwc" id="FYR-sz-4uB"/>
                         <outlet property="mainImageView" destination="mcC-bA-iwc" id="G2a-UH-NmE"/>
@@ -597,6 +492,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAY-KV-yCL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2368.7022900763359" y="-2794.3661971830988"/>
+        </scene>
+        <!--Πολυμέσα-->
+        <scene sceneID="WpU-ab-0oh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4az-YD-m7S" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Πολυμέσα" image="multimedia" id="C4c-zf-nrn"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wE5-qh-Oe9">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8Q7-aY-e63" kind="relationship" relationship="rootViewController" id="op9-Tc-R9Y"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M0G-lX-jQD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1958.0152671755725" y="-1381.6901408450706"/>
         </scene>
     </scenes>
     <resources>

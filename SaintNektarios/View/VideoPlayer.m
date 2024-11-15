@@ -20,6 +20,7 @@
 }
 - (void)viewDidAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationItem.title = @"Audio Player";
     self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
     [_btnPlay setBackgroundColor:[UIColor redColor]];
     [_btnPlay setImage:[UIImage imageNamed:@"play"] forState:UIControlStateNormal];
@@ -36,7 +37,11 @@
         NSURL *urlPlayerYmnos = [NSURL fileURLWithPath:ymnos];
         _ymnos = [[AVPlayer alloc] initWithURL:urlPlayerYmnos];
     }
-   
+    [_imageView setTranslatesAutoresizingMaskIntoConstraints:FALSE];
+    [_imageView.centerXAnchor constraintEqualToAnchor:self.view.centerXAnchor constant:0].active = TRUE;
+    [_imageView.centerYAnchor constraintEqualToAnchor:self.view.centerYAnchor constant:-50].active = TRUE;
+    [_imageView.bottomAnchor constraintEqualToAnchor:self.view.bottomAnchor constant:-250].active = TRUE;
+
 }
 
 /*

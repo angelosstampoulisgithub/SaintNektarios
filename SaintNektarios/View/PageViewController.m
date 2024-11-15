@@ -24,7 +24,7 @@
     NSArray *viewControllers = @[startingViewController];
     [self setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionReverse animated:NO completion:nil];
     [[self navigationItem] setTitle:@"Album Φωτογραφιών"];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 
 }
 - (PageContentViewController *)viewControllerAtIndex:(NSUInteger)index

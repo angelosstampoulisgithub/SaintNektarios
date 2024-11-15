@@ -20,7 +20,10 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:urlPlayer];
     [[self navigationItem] setTitle:@"Βιβλία-Εκδόσεις-Αγ.Νεκτάριος"];
     [_webView loadRequest:request];
-    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor blackColor]};
+    int width = [UIScreen mainScreen].bounds.size.width;
+    int height = [UIScreen mainScreen].bounds.size.height-150;
+    [_webView setFrame:CGRectMake(0, 100,width,height)];
+    self.navigationController.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 
     
 }

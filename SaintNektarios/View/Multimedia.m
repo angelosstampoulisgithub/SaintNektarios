@@ -22,17 +22,16 @@
 }
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    dispatch_async(dispatch_get_main_queue(), ^{
-        self->_array = [[NSMutableArray alloc] init];
-        [self->_array addObject:@"Φωτογραφικό Υλικό"];
-        [self->_array addObject:@"Βιβλία-Εκδόσεις"];
-        [self->_array addObject:@"Απολυτίκιο Αγίου Νεκταρίου"];
-        [self->_array addObject:@"Υμνος στην Παναγία"];
-        [self->_multimedia setDelegate:self];
-        [self->_multimedia setDataSource:self];
-        [self->_multimedia registerNib:[UINib nibWithNibName:@"MultimediaCell" bundle:nil] forCellReuseIdentifier:@"cell"];
-        [self->_multimedia reloadData];
-    });
+    self->_array = [[NSMutableArray alloc] init];
+    [self->_array addObject:@"Φωτογραφικό Υλικό"];
+    [self->_array addObject:@"Βιβλία-Εκδόσεις"];
+    [self->_array addObject:@"Απολυτίκιο Αγίου Νεκταρίου"];
+    [self->_array addObject:@"Υμνος στην Παναγία"];
+    [self->_multimedia setDelegate:self];
+    [self->_multimedia setDataSource:self];
+    [self->_multimedia registerNib:[UINib nibWithNibName:@"MultimediaCell" bundle:nil] forCellReuseIdentifier:@"cell"];
+    [self->_multimedia reloadData];
+    
  
 }
 
@@ -45,34 +44,72 @@
 }
 -(void) openPageViewController:(NSInteger) index{
     if(index==0){
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        _read = (PageViewController*)[storyboard instantiateViewControllerWithIdentifier:@"PageViewController"];
-        [_read setModalPresentationStyle:UIModalPresentationFullScreen];
-        [self presentViewController:_read animated:false completion:nil];
+            UIStoryboard *board;
+
+            if (!self.storyboard)
+            {
+                board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+            }
+            else
+            {
+                board = self.storyboard;
+            }
+
+            PageViewController *view = [board instantiateViewControllerWithIdentifier:@"PageViewController"];
+            [self.navigationController pushViewController:view animated:YES];
 
     }
     if(index==1){
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        _books = (BooksViewController*)[storyboard instantiateViewControllerWithIdentifier:@"BooksViewController"];
-        [_books setModalPresentationStyle:UIModalPresentationFullScreen];
-        [self presentViewController:_books animated:false completion:nil];
+        UIStoryboard *board;
+
+        if (!self.storyboard)
+        {
+            board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        }
+        else
+        {
+            board = self.storyboard;
+        }
+
+        BooksViewController *view = [board instantiateViewControllerWithIdentifier:@"BooksViewController"];
+        [self.navigationController pushViewController:view animated:YES];
+
     }
     
     if(index==2){
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        _videoPlayerApolitikio = (VideoPlayer*)[storyboard instantiateViewControllerWithIdentifier:@"VideoPlayer"];
-        [_videoPlayerApolitikio setModalPresentationStyle:UIModalPresentationFullScreen];
-        _videoPlayerApolitikio.index = 0;
-        [self presentViewController:_videoPlayerApolitikio animated:false completion:nil];
+        UIStoryboard *board;
+
+        if (!self.storyboard)
+        {
+            board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        }
+        else
+        {
+            board = self.storyboard;
+        }
+
+        VideoPlayer *view = [board instantiateViewControllerWithIdentifier:@"VideoPlayer"];
+        view.index = 0;
+        [self.navigationController pushViewController:view animated:YES];
 
     }
     
     if(index==3){
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-        _videoAgni = (VideoPlayer*)[storyboard instantiateViewControllerWithIdentifier:@"VideoPlayer"];
-        [_videoAgni setModalPresentationStyle:UIModalPresentationFullScreen];
-        _videoAgni.index =1;
-        [self presentViewController:_videoAgni animated:false completion:nil];
+        UIStoryboard *board;
+
+        if (!self.storyboard)
+        {
+            board = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        }
+        else
+        {
+            board = self.storyboard;
+        }
+
+        VideoPlayer *view = [board instantiateViewControllerWithIdentifier:@"VideoPlayer"];
+        view.index = 1;
+        [self.navigationController pushViewController:view animated:YES];
+
 
 
     }
