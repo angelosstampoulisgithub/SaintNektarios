@@ -77,13 +77,5 @@
         }
     }
 }
-- (IBAction)btnBack:(id)sender {
-    _apolytikio = nil;
-    _ymnos = nil;
-    for (UIView *view in [self.view subviews])
-    {
-        [view removeFromSuperview];
-    }
-    [self dismissViewControllerAnimated:TRUE completion:nil];
-}
+
 @end

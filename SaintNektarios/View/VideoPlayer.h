@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property AVPlayer *apolytikio;
 @property AVPlayer *ymnos;
 @property (weak, nonatomic) IBOutlet UIButton *btnBack;
-- (IBAction)btnBack:(id)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *mainImageView;
 
 @end

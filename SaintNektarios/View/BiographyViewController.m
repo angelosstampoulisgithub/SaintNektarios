@@ -13,9 +13,7 @@
 
 @implementation BiographyViewController
 - (void)viewDidLoad {
-    [super viewDidLoad];
-
-   
+    [super viewDidLoad];   
 }
 
 /*
